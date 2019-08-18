@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AS158
+D Quad 2 to 1 multiplexer
+K TTL Mux MUX2
+F http://www.ti.com/lit/gpn/sn74LS158
+$ENDCMP
+#
+$CMP 74AS245
+D Octal BUS Transceivers, 3-State outputs
+K TTL BUS 3State
+F http://www.ti.com/lit/gpn/sn74LS245
+$ENDCMP
+#
+$CMP HY5117400
+D 4Mx4Bit CMOS DRAM
+$ENDCMP
+#
+$CMP KM44C1000
+D 1Mx4Bit CMOS DRAM
+$ENDCMP
+#
+#End Doc Library
