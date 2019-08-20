@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "X68K-RAMCARD"
+Date "2019-08-18"
+Rev "R0.1"
+Comp "ZephRay"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -2772,6 +2772,49 @@ Wire Wire Line
 	1400 800  1900 800 
 Wire Wire Line
 	1400 1100 1900 1100
+$Comp
+L Device:CP C18
+U 1 1 5D65AD53
+P 1900 950
+F 0 "C18" H 2018 996 50  0000 L CNN
+F 1 "100uF" H 2018 905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1938 800 50  0001 C CNN
+F 3 "~" H 1900 950 50  0001 C CNN
+	1    1900 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 800 
+Wire Wire Line
+	1900 800  2400 800 
+Connection ~ 1900 1100
+Wire Wire Line
+	1900 1100 2400 1100
+Wire Wire Line
+	2500 5900 6800 5900
+Wire Wire Line
+	6800 5900 6800 6000
+Connection ~ 6800 6000
+Text Label 6100 5300 0    50   ~ 0
+OEA
+Text Label 6100 5400 0    50   ~ 0
+OEB
+$Comp
+L power:GND #PWR?
+U 1 1 5D7357B7
+P 6300 5400
+F 0 "#PWR?" H 6300 5150 50  0001 C CNN
+F 1 "GND" H 6305 5227 50  0000 C CNN
+F 2 "" H 6300 5400 50  0001 C CNN
+F 3 "" H 6300 5400 50  0001 C CNN
+	1    6300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5300 6300 5400
+Wire Wire Line
+	6100 5300 6300 5300
+Wire Wire Line
+	6100 5400 6300 5400
 Wire Bus Line
 	3800 1400 3800 4800
 Wire Bus Line
@@ -2800,21 +2843,5 @@ Wire Bus Line
 	7000 1400 7000 4500
 Wire Bus Line
 	2300 1400 2300 6300
-$Comp
-L Device:CP C18
-U 1 1 5D65AD53
-P 1900 950
-F 0 "C18" H 2018 996 50  0000 L CNN
-F 1 "100uF" H 2018 905 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1938 800 50  0001 C CNN
-F 3 "~" H 1900 950 50  0001 C CNN
-	1    1900 950 
-	1    0    0    -1  
-$EndComp
-Connection ~ 1900 800 
-Wire Wire Line
-	1900 800  2400 800 
-Connection ~ 1900 1100
-Wire Wire Line
-	1900 1100 2400 1100
+Connection ~ 6300 5400
 $EndSCHEMATC
